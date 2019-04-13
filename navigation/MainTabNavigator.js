@@ -26,7 +26,7 @@ import SearchResultScreen from '../screens/SearchResultScreen';
 // };
 
 const SearchStack = createStackNavigator({
-  Profile: SearchScreen,
+  Profile: { screen: SearchScreen }
 });
 
 SearchStack.navigationOptions = {
@@ -40,7 +40,7 @@ SearchStack.navigationOptions = {
 };
 
 const SearchResultStack = createStackNavigator({
-  Profile: SearchResultScreen,
+  Profile: { screen: SearchResultScreen }
 });
 
 SearchResultStack.navigationOptions = {
